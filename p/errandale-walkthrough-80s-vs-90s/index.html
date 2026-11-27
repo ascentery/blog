@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Errandale: A Walkthrough for the Unhurried · Ascentery</title><meta name="description" content="A step-by-step path through Errandale, plus a note on how 80s adventures punished and 90s adventures negotiated."><link rel="canonical" href="https://blog.ascentery.io/p/errandale-walkthrough-80s-vs-90s/">
+<meta name="theme-color" content="#14161f">
+<meta property="og:site_name" content="Ascentery"><meta property="og:type" content="article"><meta property="og:title" content="Errandale: A Walkthrough for the Unhurried · Ascentery"><meta property="og:description" content="A step-by-step path through Errandale, plus a note on how 80s adventures punished and 90s adventures negotiated."><meta property="og:url" content="https://blog.ascentery.io/p/errandale-walkthrough-80s-vs-90s/"><meta property="og:image" content="https://blog.ascentery.io/img/errandale-walkthrough-80s-vs-90s.png"><meta property="article:published_time" content="2026-11-27">
+<meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="Ascentery blog" href="https://blog.ascentery.io/feed.xml">
+<style>
+@font-face{font-family:'Newsreader';src:url('https://ascentery.io/fonts/Newsreader-VariableFont_opsz,wght.ttf') format('truetype-variations');font-weight:300 500;font-style:normal;font-display:swap}
+@font-face{font-family:'Newsreader';src:url('https://ascentery.io/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');font-weight:300 500;font-style:italic;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('https://ascentery.io/fonts/IBMPlexMono-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('https://ascentery.io/fonts/IBMPlexMono-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+:root{--ground:#14161f;--raised:#1c1f2b;--edge:#2e3347;--bone:#e8e0cd;--dim:#9a937f;--ochre:#e3a44f;--mono:'IBM Plex Mono',ui-monospace,monospace;--serif:Newsreader,Georgia,serif}
+*{box-sizing:border-box}html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--bone);font-family:var(--serif);font-size:19px;line-height:1.7;min-height:100vh}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:var(--edge)}
+a{color:var(--ochre)}
+.in{max-width:1080px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left))}
+header.top{position:sticky;top:0;z-index:10;background:var(--ground);border-bottom:1px solid var(--edge)}
+header.top .in{display:flex;align-items:center;gap:18px;height:58px}
+header.top a{text-decoration:none}
+a.brand{font-family:var(--serif);font-size:20px;color:var(--bone)}
+nav.nw{display:flex;gap:2px;flex:1;overflow-x:auto;align-self:stretch}
+nav.nw a{display:flex;align-items:center;padding:0 12px;font-family:var(--mono);font-size:12px;white-space:nowrap;color:var(--dim)}
+nav.nw a:hover{background:var(--raised)}
+nav.nw a.on{color:var(--bone);box-shadow:inset 0 -2px 0 var(--ochre)}
+.grow{flex:1}
+a.solid{background:var(--ochre);border-radius:2px;padding:8px 16px;font-family:var(--mono);font-size:12.5px;font-weight:500;color:#241a08;white-space:nowrap}
+details.nn{display:none;position:relative}
+details.nn summary{list-style:none;cursor:pointer;padding:10px 0 10px 8px;color:var(--dim);display:flex;align-items:center}
+details.nn summary::-webkit-details-marker{display:none}
+details.nn[open] summary{color:var(--bone)}
+details.nn .menu{position:absolute;top:calc(100% + 8px);left:0;min-width:170px;background:var(--raised);border:1px solid var(--edge);border-radius:4px;padding:6px;display:flex;flex-direction:column;gap:2px;z-index:41}
+details.nn .menu a{padding:9px 12px;font-family:var(--mono);font-size:12.5px;color:var(--bone);border-radius:2px}
+details.nn .menu a.on{color:var(--ochre)}details.nn .menu a:hover{background:var(--ground)}
+@media (max-width:640px){nav.nw{display:none}details.nn{display:block}.grow{display:block}}
+main{padding:34px 0 20px}
+h1{font-family:var(--serif);font-weight:400;color:var(--bone);font-size:clamp(1.9rem,5.5vw,2.6rem);line-height:1.15;margin:0 0 10px;text-wrap:balance}
+h2,h3{font-family:var(--serif);font-weight:500;color:var(--bone);line-height:1.25;margin:2em 0 .5em}h2{font-size:1.6rem}h3{font-size:1.25rem}
+.meta{font-family:var(--mono);font-size:11px;color:var(--dim);margin:0 0 30px;letter-spacing:.03em}
+.label{font-family:var(--mono);font-size:11px;color:var(--ochre);margin:0 0 8px}
+img,video{max-width:100%;height:auto;border-radius:3px}
+blockquote{margin:1.4em 0;padding:.2em 0 .2em 1.1em;border-left:3px solid var(--ochre);color:var(--dim);font-style:italic}
+code{font-family:var(--mono);font-size:.85em;background:var(--raised);padding:.1em .35em;border-radius:3px}
+pre{background:var(--raised);padding:14px 16px;border-radius:4px;overflow-x:auto}pre code{background:none;padding:0}
+hr{border:none;border-top:1px solid var(--edge);margin:2.2em 0}
+article,.cta{max-width:720px}
+figure.hero{margin:0 0 30px}figure.hero img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:3px;background:var(--raised)}
+.ph{display:block;width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,var(--raised),var(--ground));border:1px solid var(--edge);border-radius:3px;overflow:hidden}
+.ph img{display:block;width:100%;height:100%;object-fit:cover;border:0;border-radius:0}
+a.card{display:block;text-decoration:none;color:var(--bone)}
+a.card .t{font-family:var(--serif);font-size:18px;line-height:1.25;margin:10px 2px 0;color:var(--bone)}
+a.card:hover .t{color:var(--ochre)}
+a.card .d{margin:6px 2px 0;font-size:1rem;line-height:1.55;color:var(--dim)}
+a.card .m{font-family:var(--mono);font-size:11px;color:var(--dim);margin:6px 2px 0}
+.feat{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:center;margin-bottom:34px;text-decoration:none;color:var(--bone)}
+.feat .t{font-family:var(--serif);font-size:30px;line-height:1.15;margin:0 0 8px;color:var(--bone)}
+.feat:hover .t{color:var(--ochre)}
+.feat .d{font-size:1.05rem;line-height:1.55;color:var(--dim);margin:0 0 12px}
+.feat .m{font-family:var(--mono);font-size:11px;color:var(--dim)}
+@media (max-width:760px){.feat{grid-template-columns:1fr;gap:12px}.feat .t{font-size:24px}}
+ul.posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px}
+.cta{margin:56px 0 0;padding:18px 20px;background:var(--raised);border:1px solid var(--edge);border-radius:4px;font-size:1rem;line-height:1.7}
+.cta a.b{display:inline-block;margin:8px 10px 0 0;padding:7px 14px;border:1px solid var(--ochre);border-radius:3px;text-decoration:none;font-family:var(--mono);font-size:12.5px}
+footer{margin-top:56px;padding:20px 0 40px;border-top:1px solid var(--edge);display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px}
+footer a{color:var(--dim);text-decoration:none}footer a:hover{color:var(--ochre)}footer span{color:var(--dim)}</style></head><body>
+<header class="top"><div class="in">
+<a class="brand" href="https://ascentery.io/">Ascentery</a>
+<details class="nn"><summary aria-label="Menu"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="menu"><a href="https://ascentery.io/browse">Browse</a><a class="on" href="https://blog.ascentery.io/">Blog</a><a href="https://ascentery.io/support">Support</a></div></details>
+<nav class="nw"><a href="https://ascentery.io/browse">Browse</a><a class="on" href="https://blog.ascentery.io/">Blog</a><a href="https://ascentery.io/support">Support</a></nav>
+<span class="grow"></span><a class="solid" href="https://ascentery.io/browse">Play free</a>
+</div></header>
+<main><div class="in"><article><figure class="hero"><img src="https://blog.ascentery.io/img/errandale-walkthrough-80s-vs-90s.png" alt="Errandale: A Walkthrough for the Unhurried"></figure><h1>Errandale: A Walkthrough for the Unhurried</h1><p class="meta">27 November 2026</p><p><strong>Spoiler warning: this walkthrough lays out Errandale&#39;s order of operations. It does not reveal how the game ends, but it spoils the puzzle sequence. Stop here if you want to find Hollowmere cold.</strong></p>
+<p>Adventure games changed between the eighties and the nineties, and the change was not cosmetic. An 80s game was a wall. You threw verbs at it until something stuck. A 90s game was a conversation. It met you halfway, sometimes too far, sometimes with a shrug. Errandale sits on the 90s side of that line. Nothing here is designed to humiliate you. The challenge is remembering order.</p>
+<p>Which is why a walkthrough is useful and also a small admission. The game will not punish you for wandering. It will simply let you wander for a long time.</p>
+<h2>The first errand</h2>
+<p>Begin in <strong>the Market</strong>. Among the trestles of turnips, apples and greens, a cabbage and an unlit torch lie on the ground. Take both. The torch matters later; the cabbage matters sooner. Near the corner, a covered stall sits shuttered under a tied-down cloth. Investigate it, and you will find <strong>a golden carrot</strong>. This is the first real object of the day, and it is not food.</p>
+<p>Carry the carrot to <strong>the Bakery</strong>. The Baker works dough on the long table and calls you love or pet without meaning anything by it. Give her the carrot. In exchange she hands over <strong>a bag of flour</strong>, one of the supplies you came to Hollowmere for. Note the bucket of water by the counter; the room is arranged for work, not for you.</p>
+<p>The town has other suppliers. At <strong>the Blacksmith</strong>, under the timber shelter, the smith hammers a red bar flat and speaks in short sentences. A <strong>silver hammer</strong> changes hands. At <strong>the General Store</strong>, narrow shelves of rope and lamp oil yield <strong>a leather waterskin</strong>. <strong>The Library</strong>, with its shelves out of true, gives up <strong>a dusty tome</strong>. Take the butter where you find it; the game is generous with small things.</p>
+<h2>The hooded figure</h2>
+<p>A hooded figure stands at the edge of <strong>Town Square</strong>, back against the bakery wall, hood low. He calls you adventurer. He is slow and measured, a man used to being listened to. Give him the dusty tome, and the sequence opens. This is the hinge of the game: without the book, the town stays politely closed.</p>
+<p>He wants the cellar under the chapel cleared. That is the real errand. The flour and the hammer were always the smaller part.</p>
+<h2>The cellar</h2>
+<p>At <strong>the Guardhouse</strong>, pikes on whitewashed walls and a plank table of tally sheets, a <strong>rusty key</strong> waits on the table beside a golden carrot nobody has claimed. Take the key. The guardhouse chest stays locked and stays that way; do not spend time on it.</p>
+<p>Take the path down to <strong>the Hidden Cellar</strong> beneath the chapel. The floor is strewn with torn sacks, gnawed bones, and a bucket on its side. The key opens the way. Inside, <strong>giant rats</strong> have made a home in the far corner&#39;s mound of straw and rags. Clear them. This is not a puzzle; it is a chore with teeth. Bring the torch, and bring patience.</p>
+<h2>The clerk&#39;s path to the gate</h2>
+<p>With the rats gone, gather what the town asked for: the bag of flour, the silver hammer, the book, the greens. Then return to <strong>the Town Gate</strong> and tell the captain you are finished. The gate stands open in the low stone wall, flanked by watch posts and a bell rope. The porter will talk your ear off. Let him.</p>
+<p>Two omissions will cost you. First, <strong>the Edge of the Woods</strong> is worth visiting before you leave; Wren keeps an arrow counted and re-counted, Kael reads the ground, and neither will tell you what you missed. Second, <strong>the Creek Crossing</strong> and <strong>the Woods Above the Town</strong> are on the way. The path is a deer trail; the crossing stones sit at ankle depth. Walk it once so you know what the town looks like from outside the wall.</p>
+<h2>Why the order holds</h2>
+<p>The carrot before the baker, the baker before the flour, the tome before the cellar, the key before the rats, the rats before the gate. It is a chain of dependencies, which is the 90s compromise: the game is not hiding the door, it is asking you to knock on the right one first. An eighties designer would have made the carrot a riddle. Errandale makes it a cabbage&#39;s neighbour.</p>
+<p>The two elves help. Wren is dry and quick and calls you boss. Kael speaks little and calls you by name. They follow you through all of it, which is a kindness the earlier decade rarely offered.</p>
+<p>Play it free at <a href="https://ascentery.io/browse">https://ascentery.io/browse</a>. It is called Errandale, and the run is short enough that the order is the whole game.</p>
+<p>If you&#39;d like to help fund the next cutscene, there&#39;s a <a href="https://ko-fi.com/ascentery">Ko-fi page</a>.</p>
+</article><div class="cta">Ascentery is a free text adventure you play in your browser, where the world is written and illustrated by AI as you go.<br><a class="b" href="https://ascentery.io/browse">Play free</a><a class="b" href="https://ascentery.io/support">Support Ascentery</a></div>
+<footer><a href="https://ko-fi.com/ascentery" target="_blank" rel="noopener">Support on Ko-fi</a><a href="https://www.buymeacoffee.com/ascentery" target="_blank" rel="noopener">Buy me a coffee</a><a href="https://www.patreon.com/Ascentery" target="_blank" rel="noopener">Patreon</a><span>© Ascentery</span></footer></div></main></body></html>

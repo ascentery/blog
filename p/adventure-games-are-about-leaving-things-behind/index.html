@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Adventure Games Are About Leaving Things Behind · Ascentery</title><meta name="description" content="The most useful thing an adventure game can teach you is when to stop picking things up, and almost none of them say so."><link rel="canonical" href="https://blog.ascentery.io/p/adventure-games-are-about-leaving-things-behind/">
+<meta name="theme-color" content="#14161f">
+<meta property="og:site_name" content="Ascentery"><meta property="og:type" content="article"><meta property="og:title" content="Adventure Games Are About Leaving Things Behind · Ascentery"><meta property="og:description" content="The most useful thing an adventure game can teach you is when to stop picking things up, and almost none of them say so."><meta property="og:url" content="https://blog.ascentery.io/p/adventure-games-are-about-leaving-things-behind/"><meta property="og:image" content="https://blog.ascentery.io/img/adventure-games-are-about-leaving-things-behind.png"><meta property="article:published_time" content="2026-11-27">
+<meta name="twitter:card" content="summary_large_image"><link rel="alternate" type="application/rss+xml" title="Ascentery blog" href="https://blog.ascentery.io/feed.xml">
+<style>
+@font-face{font-family:'Newsreader';src:url('https://ascentery.io/fonts/Newsreader-VariableFont_opsz,wght.ttf') format('truetype-variations');font-weight:300 500;font-style:normal;font-display:swap}
+@font-face{font-family:'Newsreader';src:url('https://ascentery.io/fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');font-weight:300 500;font-style:italic;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('https://ascentery.io/fonts/IBMPlexMono-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('https://ascentery.io/fonts/IBMPlexMono-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+:root{--ground:#14161f;--raised:#1c1f2b;--edge:#2e3347;--bone:#e8e0cd;--dim:#9a937f;--ochre:#e3a44f;--mono:'IBM Plex Mono',ui-monospace,monospace;--serif:Newsreader,Georgia,serif}
+*{box-sizing:border-box}html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--bone);font-family:var(--serif);font-size:19px;line-height:1.7;min-height:100vh}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{background:var(--edge)}
+a{color:var(--ochre)}
+.in{max-width:1080px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left))}
+header.top{position:sticky;top:0;z-index:10;background:var(--ground);border-bottom:1px solid var(--edge)}
+header.top .in{display:flex;align-items:center;gap:18px;height:58px}
+header.top a{text-decoration:none}
+a.brand{font-family:var(--serif);font-size:20px;color:var(--bone)}
+nav.nw{display:flex;gap:2px;flex:1;overflow-x:auto;align-self:stretch}
+nav.nw a{display:flex;align-items:center;padding:0 12px;font-family:var(--mono);font-size:12px;white-space:nowrap;color:var(--dim)}
+nav.nw a:hover{background:var(--raised)}
+nav.nw a.on{color:var(--bone);box-shadow:inset 0 -2px 0 var(--ochre)}
+.grow{flex:1}
+a.solid{background:var(--ochre);border-radius:2px;padding:8px 16px;font-family:var(--mono);font-size:12.5px;font-weight:500;color:#241a08;white-space:nowrap}
+details.nn{display:none;position:relative}
+details.nn summary{list-style:none;cursor:pointer;padding:10px 0 10px 8px;color:var(--dim);display:flex;align-items:center}
+details.nn summary::-webkit-details-marker{display:none}
+details.nn[open] summary{color:var(--bone)}
+details.nn .menu{position:absolute;top:calc(100% + 8px);left:0;min-width:170px;background:var(--raised);border:1px solid var(--edge);border-radius:4px;padding:6px;display:flex;flex-direction:column;gap:2px;z-index:41}
+details.nn .menu a{padding:9px 12px;font-family:var(--mono);font-size:12.5px;color:var(--bone);border-radius:2px}
+details.nn .menu a.on{color:var(--ochre)}details.nn .menu a:hover{background:var(--ground)}
+@media (max-width:640px){nav.nw{display:none}details.nn{display:block}.grow{display:block}}
+main{padding:34px 0 20px}
+h1{font-family:var(--serif);font-weight:400;color:var(--bone);font-size:clamp(1.9rem,5.5vw,2.6rem);line-height:1.15;margin:0 0 10px;text-wrap:balance}
+h2,h3{font-family:var(--serif);font-weight:500;color:var(--bone);line-height:1.25;margin:2em 0 .5em}h2{font-size:1.6rem}h3{font-size:1.25rem}
+.meta{font-family:var(--mono);font-size:11px;color:var(--dim);margin:0 0 30px;letter-spacing:.03em}
+.label{font-family:var(--mono);font-size:11px;color:var(--ochre);margin:0 0 8px}
+img,video{max-width:100%;height:auto;border-radius:3px}
+blockquote{margin:1.4em 0;padding:.2em 0 .2em 1.1em;border-left:3px solid var(--ochre);color:var(--dim);font-style:italic}
+code{font-family:var(--mono);font-size:.85em;background:var(--raised);padding:.1em .35em;border-radius:3px}
+pre{background:var(--raised);padding:14px 16px;border-radius:4px;overflow-x:auto}pre code{background:none;padding:0}
+hr{border:none;border-top:1px solid var(--edge);margin:2.2em 0}
+article,.cta{max-width:720px}
+figure.hero{margin:0 0 30px}figure.hero img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:3px;background:var(--raised)}
+.ph{display:block;width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,var(--raised),var(--ground));border:1px solid var(--edge);border-radius:3px;overflow:hidden}
+.ph img{display:block;width:100%;height:100%;object-fit:cover;border:0;border-radius:0}
+a.card{display:block;text-decoration:none;color:var(--bone)}
+a.card .t{font-family:var(--serif);font-size:18px;line-height:1.25;margin:10px 2px 0;color:var(--bone)}
+a.card:hover .t{color:var(--ochre)}
+a.card .d{margin:6px 2px 0;font-size:1rem;line-height:1.55;color:var(--dim)}
+a.card .m{font-family:var(--mono);font-size:11px;color:var(--dim);margin:6px 2px 0}
+.feat{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:center;margin-bottom:34px;text-decoration:none;color:var(--bone)}
+.feat .t{font-family:var(--serif);font-size:30px;line-height:1.15;margin:0 0 8px;color:var(--bone)}
+.feat:hover .t{color:var(--ochre)}
+.feat .d{font-size:1.05rem;line-height:1.55;color:var(--dim);margin:0 0 12px}
+.feat .m{font-family:var(--mono);font-size:11px;color:var(--dim)}
+@media (max-width:760px){.feat{grid-template-columns:1fr;gap:12px}.feat .t{font-size:24px}}
+ul.posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px}
+.cta{margin:56px 0 0;padding:18px 20px;background:var(--raised);border:1px solid var(--edge);border-radius:4px;font-size:1rem;line-height:1.7}
+.cta a.b{display:inline-block;margin:8px 10px 0 0;padding:7px 14px;border:1px solid var(--ochre);border-radius:3px;text-decoration:none;font-family:var(--mono);font-size:12.5px}
+footer{margin-top:56px;padding:20px 0 40px;border-top:1px solid var(--edge);display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px}
+footer a{color:var(--dim);text-decoration:none}footer a:hover{color:var(--ochre)}footer span{color:var(--dim)}</style></head><body>
+<header class="top"><div class="in">
+<a class="brand" href="https://ascentery.io/">Ascentery</a>
+<details class="nn"><summary aria-label="Menu"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="menu"><a href="https://ascentery.io/browse">Browse</a><a class="on" href="https://blog.ascentery.io/">Blog</a><a href="https://ascentery.io/support">Support</a></div></details>
+<nav class="nw"><a href="https://ascentery.io/browse">Browse</a><a class="on" href="https://blog.ascentery.io/">Blog</a><a href="https://ascentery.io/support">Support</a></nav>
+<span class="grow"></span><a class="solid" href="https://ascentery.io/browse">Play free</a>
+</div></header>
+<main><div class="in"><article><figure class="hero"><img src="https://blog.ascentery.io/img/adventure-games-are-about-leaving-things-behind.png" alt="Adventure Games Are About Leaving Things Behind"></figure><h1>Adventure Games Are About Leaving Things Behind</h1><p class="meta">27 November 2026</p><p>Every adventure game eventually asks you to carry something. A key, a rope, a note, a stone with a face on it. The convention is so old it has stopped looking like a choice: you pick it up because the game let you, and a game that lets you do something is usually telling you to do it. Pick up the thing. The thing will matter.</p>
+<p>This is mostly true. It is also the reason so many of these games feel heavier than they are.</p>
+<h2>The inventory is an argument</h2>
+<p>Consider what an inventory actually is. It is not a pocket. It is a list of open obligations. Every object in it is a sentence the game has begun and not finished: a door you have not found for the key, a person you have not met for the note. The list grows faster than you can close it, and the closing is the game.</p>
+<p>So the inventory is never neutral. It is a running record of what you owe the world, and the world does not tell you which debts are real. The rope might open the well. The rope might be scenery that happened to fit in your hands. The game knows. You do not.</p>
+<h2>Objects that are only there to be carried</h2>
+<p>Here is the small oddity worth noticing: a great many adventure games include objects that do nothing at all. Not trap objects, not decoys with a joke attached, just things the game permits you to take and never asks about again. A pebble. An old boot. A book whose title is the whole of its content.</p>
+<p>The reflex is to call this a design flaw, and sometimes it is. But the more interesting reading is that the useless object is doing quiet work. It teaches you that permission is not instruction. It puts a little noise into the signal, and the noise is what makes the real inventory feel like a decision rather than a receipt.</p>
+<p>A game with only useful objects is a game that has told you everything in advance. A game with a few useless ones is admitting it has not.</p>
+<h2>The discipline of the empty hand</h2>
+<p>The player who understands this stops hoarding. This is not a tip, and it is not a habit worth teaching, exactly. It is something you learn by being wrong enough times: that the pile in the corner is not progress, that a full inventory can be a way of not thinking. The empty hand is the state in which you can actually look at a room.</p>
+<p>Adventure games rarely say this. They reward accumulation loudly and letting go quietly. You can carry thirty objects and never be asked to drop one, and the game will be no worse for it, and you will be slightly worse, because you spent the second half of the story rummaging.</p>
+<h2>Why the form can say something the others cannot</h2>
+<p>Other kinds of games have inventories too, and they are mostly legible: the numbers tell you what an object is worth, and worth is a decision already made. A text adventure cannot lean on a number. It hands you a word and waits for you to decide what the word is for. The question is not how much it weighs but whether it belongs to the story you are in.</p>
+<p>That is a strange thing to ask a player, and it is the reason the small useless objects matter so much. They force the question. The rope cannot tell you if it is the rope for this problem. Only you can, by the quality of your attention, and you will sometimes be wrong, and the world will not collapse. It will simply hold the rope until you are finished with it, or until you are not.</p>
+<h2>The ending you carry out</h2>
+<p>There is a moment near the end of most of these games when the inventory is nearly empty and the story is nearly done, and the two are not a coincidence. The obligations have been paid or abandoned. What is left in the list is what the game decided you could not leave behind, and the shape of that short list is the shape of the ending.</p>
+<p>Which is why the useless objects are not a flaw and the hoarding is not really a strategy. They are the same lesson from two directions: a good adventure game is not about what you can pick up. It is about what you are willing to put down, and when, and whether you noticed the difference while there was still time to be wrong about it.</p>
+<p>If you&#39;d like to help fund the next cutscene, there&#39;s a <a href="https://ko-fi.com/ascentery">Ko-fi page</a>.</p>
+</article><div class="cta">Ascentery is a free text adventure you play in your browser, where the world is written and illustrated by AI as you go.<br><a class="b" href="https://ascentery.io/browse">Play free</a><a class="b" href="https://ascentery.io/support">Support Ascentery</a></div>
+<footer><a href="https://ko-fi.com/ascentery" target="_blank" rel="noopener">Support on Ko-fi</a><a href="https://www.buymeacoffee.com/ascentery" target="_blank" rel="noopener">Buy me a coffee</a><a href="https://www.patreon.com/Ascentery" target="_blank" rel="noopener">Patreon</a><span>© Ascentery</span></footer></div></main></body></html>
